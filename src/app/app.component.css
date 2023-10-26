@@ -1,0 +1,87 @@
+.upper-image{
+    background-image: url("../assets/images/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+}
+body{
+    background-color: #1f2128;
+    background-size: cover;
+    height:240vh;
+    width: 100%;
+    margin-right: 0px;
+}
+
+.text-group {
+    text-align: center;
+}
+ h1,img{
+    display: inline;
+}
+h1{
+    color:#ffffff;
+}
+.logo-content{
+    margin-bottom: 62px;
+}
+.text-group{
+    margin-bottom: 86px;
+}
+
+@media only screen and (max-width: 1400px) {
+    body {
+        background-color:  #1f2128;
+            background-size: cover;
+            height:305vh;
+    
+    }
+
+  }
+
+  @media only screen and (max-width: 1100px) {
+    body {
+            
+            height:350vh;
+    
+    }
+  }
+  @media only screen and (max-width:767px){
+        body{
+
+            height:650vh;
+        }
+  }
+  @media only screen and (max-width: 640px) {
+    body {
+            
+            height:1120vh;
+    
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    body {
+            
+            height:750vh;
+    
+    }
+  }
+  @media only screen and (max-width:280px){
+    body {
+        
+            height:650vh;
+    
+    }
+   
+  }
+  @media only screen and (max-width:340px){
+    body {
+        
+            height:870vh;
+    
+    }
+   
+  }
+
+
+ 

@@ -1,0 +1,330 @@
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+    margin-right: -23px;
+    margin-top:25px;
+}
+.card-blue {
+    background-color: #388ee7;
+  }
+  
+.card-purple {
+    background-color: #6249cc;
+}
+.card-green {
+    background-color: #40b681;
+}
+  .icon-description img{
+    position: relative;
+    bottom: 4px;
+  }
+  
+.card-orange {
+    background-color: #de944e;
+}
+  
+.card-red {
+    background-color: #9c3a3a;
+}
+
+  .card-header{
+    background-image: url("src/assets/images/cloud.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+   background-size: cover;
+   max-width:100%;
+   height:217px;
+}
+.card{
+    border-radius: 10px;
+    border:none;
+    max-width:100%;
+    height:368px;
+    margin:43px;
+    padding: 0px;
+}
+
+.card-header-content h4{
+    display: inline;
+}
+.temp{
+    font-size: 64.05pt;
+    position: relative;
+    bottom: 20.5px; 
+}
+.city{
+    font-size: 28.82pt;
+}
+.date{
+    font-size:16.01pt; 
+}
+.small-text{
+    font-size: 16.01pt;
+}
+.image-text{
+    font-size: 19.22pt;
+}
+.temp-max-min p{
+    line-height: 18.02pt;
+}
+.weather-city-country-dt{
+    text-align: center;
+}
+.paragraph{
+    display:inline-block;
+    
+}
+p,span{
+    color: #ffffff;
+}
+.card-body{
+    background-color: #383b47;
+}
+.card-content li{
+    color:#f1f2f2;
+   font-size: 16.01px;
+   line-height: 25px;
+}
+ul{
+    list-style-type: none;
+}
+.temp-max-min{
+    position: relative;
+    bottom: 20px;
+}
+ul li img{
+   position: relative;
+   left:50px; 
+}
+.vr{
+    color: white;
+    height:50px;
+    position: relative;
+    left: 15px;
+}
+.close-botton{
+    margin-left:98%;
+}
+.input-field{
+    text-align: center;
+}
+::placeholder {
+    color: #6e6f72;
+  }
+.btn-primary{
+    
+    height:50.45px;
+    width:131.28px;
+    overflow: hidden;
+    position: relative;
+    right:10px;
+    bottom:3px;
+}
+input{
+    width:422.66px;
+    height:50.45px;
+}
+.text-field{
+    background-color: black;
+    border:none;
+    max-width: 100%;
+}
+  @media only screen and (992px < width < 1400px) {
+   
+    .temp{
+        font-size: 50pt;
+        position: relative;
+        bottom: 15.5px; 
+    }
+    .city{
+        font-size: 18.41pt;
+    }
+    img{
+        margin:-3px;
+    }
+    .date{
+        font-size:8pt;
+    }
+    .image-text{
+        font-size: 14pt;
+    }
+    .small-text{
+        font-size: 12.01pt;  
+    }
+    .weather-icon-text{
+        display: block;
+    }
+    .card{
+        border-radius: 10px;
+        border:none;
+    }
+  }
+  @media only screen and ( 767px < width < 992px) {
+    .temp{
+        font-size: 30pt;
+        position: relative;
+        bottom: 15.5px; 
+    }
+    
+    .city{
+        font-size: 12pt;
+    }
+    .small-text{
+        font-size: 9pt;  
+    }
+    .image-text{
+        font-size:10pt;
+    }
+    .weather-icon-text{
+        display: block;
+    }
+    .temp-max-min{
+        margin-top: 30px;
+    }
+    .temp-max-min p{
+        line-height: 10.02pt;
+    }
+    .card{
+        border-radius: 10px;
+        border:none;
+    }
+   
+  }
+  @media only screen and (max-width : 767px){
+   
+    .temp{
+        font-size: 40pt;
+        position: relative;
+        top:0.20px;
+
+    }
+    .city{
+        font-size: 15.5pt;
+    }
+    .small-text{
+        font-size: 9pt;  
+    }
+    .temp-max-min p{
+        line-height: 10.02pt;
+    }
+    .image-text{
+        font-size:11pt;
+    }
+    .card{
+        border-radius: 10px;
+        border:none;
+    }
+  }
+  @media only screen and (max-width :497px){
+    
+    .weather-icon-text{
+        display: block;
+    }
+    .icon-description{
+        position: relative;
+        left:30px;
+      }
+      .temp-max-min{
+        position: relative;
+        left: 13px;
+        top:20px;
+    }
+    .temp-max-min p{
+        line-height: 10.02pt;
+    }
+    .card{
+        border-radius: 10px;
+        border:none;
+    }
+  
+  }
+  @media only screen and (max-width :475px){
+    .temp{
+        font-size: 25pt;
+        position: relative;
+        top:0.20px;
+
+    }
+    .city{
+        font-size: 9pt;
+    }
+   
+    .small-text{
+        font-size: 7pt;  
+    }
+    .weather-icon-text{
+        display: block;
+    }
+    .icon-description{
+        position: relative;
+        left:30px;
+      }
+      .temp-max-min{
+        position: relative;
+        left: 13px;
+        top:20px;
+    }
+    .temp-max-min p{
+        line-height: 10.02pt;
+    }
+    .card{
+        border-radius: 10px;
+        border:none;
+    }
+    .btn-primary{
+        margin-top: 10px;
+    }
+  }
+  
+  @media only screen and (max-width:313px){
+    
+    .temp{
+        font-size: 17pt;
+        position: relative;
+        top:0.20px;
+
+    }
+    .image-text{
+        font-size:12px;
+    }
+    .icon-description{
+        position: relative;
+        left:3px;
+      }
+      .card-body li{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .card{
+        border-radius: 10px;
+        border:none;
+    }
+  }
+  @media only screen and (max-width:280px){
+   
+    .temp{
+        font-size: 19pt;
+        position: relative;
+        top:0.20px;
+
+    }
+    .icon-description{
+        position: relative;
+        left:5px;
+      }
+      .small-text{
+        font-size: 8pt;  
+    }
+    .card-body li{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .card{
+        border-radius: 10px;
+        border:none;
+    }
+    .btn-primary{
+        margin-top: 21px;
+    }
+  }
+  

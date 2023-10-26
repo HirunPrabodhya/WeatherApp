@@ -1,0 +1,52 @@
+
+<div class="card" *ngIf="weatherData">
+    <div class="card-header" [ngClass]="color">
+            <div class="header-line">
+                <img src="assets/images/arrow.png" alt="" [routerLink]="['/']">
+            </div>
+            <div class="card-header-content">
+                    <div class="upper-header-content">
+                      <h1>{{weatherData.name}},{{weatherData.country}}</h1>
+                      <p>{{weatherData.dt | time}}</p>
+                  </div>
+                  <div class="below-header-content">
+                      <ul class="paragraph p1">
+                          <li><img src="https://openweathermap.org/img/wn/{{weatherData.icon}}.png" alt="icon" class="img-icon"></li>
+                          <li>{{weatherData.description}}</li>
+                      </ul>
+                      <div class="vr"></div>
+                      <ul class="paragraph">
+                        <li class="temp">{{weatherData.temp | number:'.0-0'}}&deg;C</li>
+                        <li>Temp Min:{{weatherData.temp_min | number:'.0-0'}}&deg;C</li>
+                        <li>Temp Max:{{weatherData.temp_max | number:'.0-0'}}&deg;C</li>
+                      </ul>
+                  </div>
+            </div>
+            
+    </div>
+    <div class="card-body">
+      <div class="card-text">
+        <ul class="paragraph">
+          <li>Pressure: {{weatherData.pressure}}hPa</li>
+          <li>Humidity: {{weatherData.humidity}}%</li>
+          <li>Visibility: {{weatherData.visibility}}km</li>
+      </ul>
+      <div class="vr"></div>
+      <ul class="paragraph">
+        <li><img src="assets/images/share.png" alt="share"></li>
+        <li>{{weatherData.speed}}m/s {{weatherData.deg}} Degree</li>
+        
+      </ul>
+      <div class="vr"></div>
+      <ul class="paragraph">
+        <li>Sunrise:{{weatherData.sunrise | date:'shortTime'}}</li>
+        <li>Sunset:{{weatherData.sunset | date:'shortTime'}}</li>
+        
+      </ul>
+    </div>
+    </div>
+  
+  </div>
+  <div class="alert alert-danger" *ngIf="errorMessage">
+    {{errorMessage}}
+  </div>

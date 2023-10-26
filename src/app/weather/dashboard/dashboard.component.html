@@ -1,0 +1,63 @@
+<div class="input-field">
+  <input type="text" placeholder="Enter a city" class="text-field"/>
+  <button class="btn btn-primary">Add City</button>
+</div>
+<div class="row row-cols-1 row-cols-md-2 g-4" *ngIf="weatherData">
+  <div class="col" *ngFor="let weather of weatherData;let i = index" >
+    <div class="card">
+     
+      <div [ngClass]="colors[i]" class="card-header" (click)="navigateTotheView(weather.id,colors[i])">
+          <div class="close-botton">
+            <img src="assets/images/close.png" alt="close">
+          </div>
+        <div class="contain">
+          <div class="row row-cols-2">
+            <div class="col weather-city-country-dt">
+                  <p class="city">{{weather.name}},{{weather.country}}</p>
+                  <p class="small-text">{{weather.dt | time}}</p> 
+            </div>
+            <div class="col" >
+              <p class="temp">{{weather.temp | number:'.0-0'}}&deg;C</p>
+            </div>
+            <div class="col weather-icon-text icon-description">
+              <img src="https://openweathermap.org/img/wn/{{weather.icon}}.png" alt="icon" class="img-icon">
+              <span class="image-text weather-icon-text">{{weather.description}}</span>
+            </div>
+            <div class="col temp-max-min">
+                <p class="small-text">Temp Min:{{weather.temp_min | number:'.0-0'}}&deg;C</p>
+                <p class="small-text">Temp Max:{{weather.temp_max | number:'.0-0'}}&deg;C</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body" >
+        <div class="card-content" >
+          <div class="card-text">
+            <ul class="paragraph">
+              <li>Pressure: {{weather.pressure}}hPa</li>
+              <li>Humidity: {{weather.humidity}}%</li>
+              <li>Visibility: {{weather.visibility}}km</li>
+          </ul>
+          <div class="vr"></div>
+          <ul class="paragraph">
+            <li><img src="assets/images/share.png" alt="share"></li>
+            <li>{{weather.speed}}m/s {{weather.deg}} Degree</li>
+            
+          </ul>
+          <div class="vr"></div>
+          <ul class="paragraph">
+            <li>Sunrise:{{weather.sunrise | date:'shortTime'}}</li>
+            <li>Sunset:{{weather.sunset | date:'shortTime'}}</li>
+            
+          </ul>
+        </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  
+</div>
+<div class="alert alert-danger" *ngIf="errorMessage">
+  {{errorMessage}}
+</div>
